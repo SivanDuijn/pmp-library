@@ -14,8 +14,8 @@ namespace pmp {
 
 Decimation::Decimation(SurfaceMesh& mesh) : mesh_(mesh)
 {
-    if (!mesh_.is_triangle_mesh())
-        throw InvalidInputException("Input is not a pure triangle mesh!");
+    // if (!mesh_.is_triangle_mesh())
+    //     throw InvalidInputException("Input is not a pure triangle mesh!");
 
     aspect_ratio_ = 0;
     edge_length_ = 0;

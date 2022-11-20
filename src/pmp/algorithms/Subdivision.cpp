@@ -184,11 +184,11 @@ void Subdivision::catmull_clark()
 
 void Subdivision::loop()
 {
-    if (!mesh_.is_triangle_mesh())
-    {
-        auto what = "Subdivision: Not a triangle mesh.";
-        throw InvalidInputException(what);
-    }
+    // if (!mesh_.is_triangle_mesh())
+    // {
+    //     auto what = "Subdivision: Not a triangle mesh.";
+    //     throw InvalidInputException(what);
+    // }
 
     // reserve memory
     size_t nv = mesh_.n_vertices();

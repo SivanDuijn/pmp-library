@@ -20,8 +20,8 @@ namespace pmp {
 Remeshing::Remeshing(SurfaceMesh& mesh)
     : mesh_(mesh), refmesh_(nullptr), kd_tree_(nullptr)
 {
-    if (!mesh_.is_triangle_mesh())
-        throw InvalidInputException("Input is not a pure triangle mesh!");
+    // if (!mesh_.is_triangle_mesh())
+    //     throw InvalidInputException("Input is not a pure triangle mesh!");
 
     points_ = mesh_.vertex_property<Point>("v:point");
 
